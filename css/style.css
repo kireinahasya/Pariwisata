@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.bg-navy {
+    background-color: #0b2545 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e56b6f;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 400px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.6); 
+}
+
+.carousel-caption {
+    bottom: 30%;
+    z-index: 10;
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.section-title {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+    color: #0b2545;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #e56b6f;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    background-color: #0b2545;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.btn-navy {
+    background-color: #0b2545;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-navy:hover {
+    background-color: #134074;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.2rem;
+    }
+    .carousel-item {
+        height: 60vh;
+    }
+}
